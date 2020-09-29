@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block head_title %}
+Blog Details
+{% endblock head_title %}
+{% block content %}
+
+        <ul>
+            <li>{{object.title}} </li>
+            <li>{{object.slug}} </li>
+            <li>{{object.content}}</li>
+        </ul>
+
+{% endblock content %}

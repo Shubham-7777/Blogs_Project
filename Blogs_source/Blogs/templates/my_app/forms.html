@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Forms Html</h1>
+<h1>{{my_title}}</h1>
+<form method="POST" action="." enctype='multipart/form-data'> {% csrf_token %}
+    {{ my_form.as_p }}
+    <a href="/blog/"><button type="submit">Submit</button></a>
+</form>
+
+
+{% endblock content %}
+
+    <!--
+    <label for="title">title </label>
+    <input id="title" type="text" name="title" >
+    <label for="slug">slug </label>
+    <input id="slug" type="text"  name="slug">
+    <label for="content"> content </label>
+    <textarea id="content"  type="text" name="content"></textarea>
+
+    -->
